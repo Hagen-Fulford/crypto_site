@@ -11,7 +11,27 @@ const Navbar = () => {
         <div>
             <ThemeToggle/>
         </div>
+        <div>
+            <link to='/signin'>Sign In</link>
+            <link to='/signup'>Sign Up</link>
+        </div>
+        <div>
+            {/* Menue icon */}
 
+        </div>
+        <div>
+            <AiOutlineMenu/>
+        </div>
+        <div>
+            {/* mobile menu */}
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <Link to='/'>Home</Link>
+                </li>
+            </ul>
+        </div>
 
     </div>
     )
