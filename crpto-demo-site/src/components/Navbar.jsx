@@ -20,7 +20,7 @@ const Navbar = () => {
 
         </div>
         <div>
-            <AiOutlineMenu/>
+            {/* <AiOutlineMenu/> */}
         </div>
         <div>
             {/* mobile menu */}
