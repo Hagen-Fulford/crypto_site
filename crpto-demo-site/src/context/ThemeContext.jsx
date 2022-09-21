@@ -5,26 +5,25 @@ import React, {useState, useEffect, createContext} from 'react'
 
 
 //  sets the app theme to dark if that is the users preferred color if not it will set it to light 
-const getInitialTheme = () => { 
-    if(typeof window !== 'undefined' && window.localStorage) {
+
+const getInitialTheme = () => {
+    if (typeof window !== 'undefined' && window.localStorage) {
         const storedPrefs = window.localStorage.getItem('color-theme')
         if (typeof storedPrefs === 'string') {
             return storedPrefs
         }
 
         const userMedia = window.matchMedia('(prefers-color-scheme: dark)')
-        if (userMedia.matches){
+        if (userMedia.matches) {
             return 'dark'
-        }
+        } 
     }
     return 'light'
-
 }
-
 
 export const ThemeContext = createContext()
 
-export const ThemeProvider = ({getInitialTheme, children}) => {
+export const ThemeProvider = ({initialTheme, children}) => {
     const [theme, setTheme] = useState(getInitialTheme)
 
     const rawSetTheme = (theme) => {
@@ -37,17 +36,23 @@ export const ThemeProvider = ({getInitialTheme, children}) => {
         localStorage.setItem('color-theme', theme)
     }
 
-    if (getInitialTheme){
-        rawSetTheme(getInitialTheme)
+    if (initialTheme) {
+        rawSetTheme(initialTheme)
     }
 
-    useEffect(() => {
+    useEffect(()=> {
         rawSetTheme(theme)
-    }, [theme])
+    },[theme])
 
-    return(
-        <ThemeContext.Provider value ={{theme, setTheme}}>
+    return (
+        <ThemeContext.Provider value={{theme,setTheme}}>
             {children}
         </ThemeContext.Provider>
     )
 }
+
+
+
+
+
+
