@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Sparklines, SparklinesLine } from 'react-sparklines';
 import { FaTwitter, FaFacebook, FaReddit, FaGithub } from 'react-icons/fa';
-import DOMPurify from 'dompurify';
+import DOMPurify from 'dompurify'
 import { useParams } from 'react-router-dom';
 
 const CoinPage = () => {
@@ -11,7 +11,7 @@ const CoinPage = () => {
 
   const url =
     `https://api.coingecko.com/api/v3/coins/${params.coinId}?localization=false&sparkline=true`;
-// use params is replaceing 'bitcoin' for a dynamic link, must have back ticks so that the template lliteral can be accessed 
+
   useEffect(() => {
     axios.get(url).then((response) => {
       setCoin(response.data);
