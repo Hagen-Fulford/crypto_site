@@ -15,7 +15,7 @@ const Account = () => {
       console.log(e.message);
     }
   };
-
+// below if user is signed in renturn the following statment, else return to signin page 
   if (user) {
     return (
       <div className='max-w-[1140px] mx-auto'>

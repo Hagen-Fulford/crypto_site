@@ -40,6 +40,7 @@ const SavedCoin = () => {
                 <tr className='border-b'>
                 <th className='px-4'>Rank #</th>
                 <th className='text-left'>Coin</th>
+                {/* <th className=' text-left'>Price</th> */}
                 <th className='text-left'>Remove</th>
                 </tr>
             </thead>
