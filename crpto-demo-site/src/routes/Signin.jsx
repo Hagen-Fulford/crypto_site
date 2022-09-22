@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { AiFillLock, AiOutlineMail } from 'react-icons/ai';
 import { Link, useNavigate } from 'react-router-dom';
 import { signIn, UserAuth } from '../context/AuthContext';
+import {GoogleButton} from 'react-google-button';
+
 
 const Signin = () => {
   const [email, setEmail] = useState('');
@@ -59,6 +61,9 @@ const Signin = () => {
             Sign up
           </Link>
         </p>
+        <div>
+          <GoogleButton/>
+        </div>
       </div>
     </div>
   );
