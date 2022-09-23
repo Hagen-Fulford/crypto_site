@@ -6,6 +6,9 @@ My inspiration was Coinbase and I wanted to build a site to track the top crypto
 
 
 
+## Live Website
+
+https://crypto-b96fd.firebaseapp.com/signup
 ## Run Locally
 
 Clone the project
@@ -34,19 +37,10 @@ Start the server
 
 Note you will need to install firebase and obtain your own credentials. 
 
-## Badges
-
-Add badges from somewhere like: [shields.io](https://shields.io/)
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
-
-
 
 ## Tech Stack
 
-**Client:** React, Axios, Tailwind CSS, Firebase, NPM
+React, Axios, Tailwind CSS, Firebase, NPM
 
 
 
@@ -56,5 +50,3 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hagenfulford/)
 
 
-
- 
